@@ -49,7 +49,7 @@ ScreenGui.Parent = player.PlayerGui
 -- propriedades
 
  ScreenGui.Parent = game.Players.LocalPlaye:WaitForChild("PlayerGui")
- ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ ScreenGui.snshdjnsshdkwgzigd3 = Enum.snshdjnsshdkwgzigd3.Sibling
 
 ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
