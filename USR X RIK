@@ -1,14 +1,10 @@
--- Gui to lua
-
--- versão beta
-
---local library
+-- Gui to Lua
+-- Version: 3.2
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 
--- Instâncias:
-
+-- Instances:
 local player = game.Players.LocalPlayer
 local ScreenGui = Instance.new("ScreenGui")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -16,37 +12,36 @@ local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
-local forma = Instance.new("TextLabel")
-local scaner = Instance.new("TextLabel")
+local fase = Instance.new("TextLabel")
+local contador = Instance.new("TextLabel")
 local Frame_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local verJogadores = Instance.new("TextButton")
+local verJugadores = Instance.new("TextButton")
 local reb = Instance.new("TextButton")
-local inimigo = Instance.new("TextLabel")
+local enemigp = Instance.new("TextLabel")
 local a = Instance.new("TextLabel")
-local Status = Instance.new("TextLabel")
-local formaName = Instance.new("TextLabel")
-local verificacao = Instance.new("Frame")
+local Stats = Instance.new("TextLabel")
+local faseName = Instance.new("TextLabel")
+local verificacion = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
 local usuario = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
 local Frame_3 = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
-local nomes = Instance.new("TextLabel")
+local names = Instance.new("TextLabel")
 
--- nao borrar
-
+--no borrar
 ScreenGui.Name = "modified x kevin"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.DisplayOrder = 999
 ScreenGui.Parent = player.PlayerGui
 
--- propriedades
+--Properties:
 
- ScreenGui.Parent = game.Players.LocalPlaye:WaitForChild("PlayerGui")
- ScreenGui.snshdjnsshdkwgzigd3 = Enum.snshdjnsshdkwgzigd3.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 ScrollingFrame.Parent = ScreenGui
 ScrollingFrame.Active = true
@@ -70,7 +65,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0.300000012, 0, 1, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Nomes"
+TextLabel.Text = "Nombre"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -98,7 +93,7 @@ TextLabel_3.BorderColor3 = Color3.fromRGB(17, 0, 255)
 TextLabel_3.Position = UDim2.new(0.550000012, 0, 0, 0)
 TextLabel_3.Size = UDim2.new(0.200000003, 0, 1, 0)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Status"
+TextLabel_3.Text = "Stats"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
@@ -106,37 +101,37 @@ TextLabel_3.TextStrokeColor3 = Color3.fromRGB(255, 211, 34)
 TextLabel_3.TextStrokeTransparency = 0.000
 TextLabel_3.TextWrapped = true
 
-forma.Name = "forma"
-forma.Parent = Frame
-forma.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-forma.BorderColor3 = Color3.fromRGB(0, 0, 0)
-forma.BorderSizePixel = 0
-forma.Position = UDim2.new(0.750999987, 0, 0, 0)
-forma.Size = UDim2.new(0.219999999, 0, 1, 0)
-forma.Font = Enum.Font.SourceSans
-forma.Text = "Forma"
-forma.TextColor3 = Color3.fromRGB(0, 0, 0)
-forma.TextScaled = true
-forma.TextSize = 14.000
-forma.TextStrokeColor3 = Color3.fromRGB(48, 217, 255)
-forma.TextStrokeTransparency = 0.000
-forma.TextWrapped = true
+fase.Name = "fase"
+fase.Parent = Frame
+fase.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+fase.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fase.BorderSizePixel = 0
+fase.Position = UDim2.new(0.750999987, 0, 0, 0)
+fase.Size = UDim2.new(0.219999999, 0, 1, 0)
+fase.Font = Enum.Font.SourceSans
+fase.Text = "Fase"
+fase.TextColor3 = Color3.fromRGB(0, 0, 0)
+fase.TextScaled = true
+fase.TextSize = 14.000
+fase.TextStrokeColor3 = Color3.fromRGB(48, 217, 255)
+fase.TextStrokeTransparency = 0.000
+fase.TextWrapped = true
 
-scaner.Name = "scaner"
-scaner.Parent = ScreenGui
-scaner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-scaner.BorderColor3 = Color3.fromRGB(0, 0, 0)
-scaner.BorderSizePixel = 0
-scaner.Position = UDim2.new(0.787851334, 0, 0.85546875, 0)
-scaner.Size = UDim2.new(0, 176, 0, 43)
-scaner.Visible = false
-scaner.Font = Enum.Font.SourceSans
-scaner.Text = "Jogadores na partida"
-scaner.TextColor3 = Color3.fromRGB(255, 255, 255)
-scaner.TextScaled = true
-scaner.TextSize = 14.000
-scaner.TextStrokeTransparency = 0.000
-scaner.TextWrapped = true
+contador.Name = "contador"
+contador.Parent = ScreenGui
+contador.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+contador.BorderColor3 = Color3.fromRGB(0, 0, 0)
+contador.BorderSizePixel = 0
+contador.Position = UDim2.new(0.787851334, 0, 0.85546875, 0)
+contador.Size = UDim2.new(0, 176, 0, 43)
+contador.Visible = false
+contador.Font = Enum.Font.SourceSans
+contador.Text = "Jugadores En Partida"
+contador.TextColor3 = Color3.fromRGB(255, 255, 255)
+contador.TextScaled = true
+contador.TextSize = 14.000
+contador.TextStrokeTransparency = 0.000
+contador.TextWrapped = true
 
 Frame_2.Parent = ScreenGui
 Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -153,7 +148,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
 TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "USR X RIK"
+TextButton.Text = "Farm MultiQuest"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -163,22 +158,22 @@ TextButton.TextWrapped = true
 
 UICorner.Parent = TextButton
 
-verJogadores.Name = "verJogadores"
-verJogadores.Parent = Frame_2
-verJogadores.AnchorPoint = Vector2.new(0.5, 0)
-verJogadores.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-verJogadores.BorderColor3 = Color3.fromRGB(57, 11, 240)
-verJogadores.BorderSizePixel = 2
-verJogadores.Position = UDim2.new(0.5, 0, 0, 1)
-verJogadores.Size = UDim2.new(0.99000001, 0, 0.119999997, 0)
-verJogadores.Font = Enum.Font.SourceSans
-verJogadores.Text = "ver jogadores"
-verJogadores.TextColor3 = Color3.fromRGB(0, 0, 0)
-verJogadores.TextScaled = true
-verJogadores.TextSize = 14.000
-verJogadores.TextStrokeColor3 = Color3.fromRGB(165, 10, 255)
-verJogadores.TextStrokeTransparency = 0.000
-verJogadores.TextWrapped = true
+verJugadores.Name = "verJugadores"
+verJugadores.Parent = Frame_2
+verJugadores.AnchorPoint = Vector2.new(0.5, 0)
+verJugadores.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+verJugadores.BorderColor3 = Color3.fromRGB(57, 11, 240)
+verJugadores.BorderSizePixel = 2
+verJugadores.Position = UDim2.new(0.5, 0, 0, 1)
+verJugadores.Size = UDim2.new(0.99000001, 0, 0.119999997, 0)
+verJugadores.Font = Enum.Font.SourceSans
+verJugadores.Text = "Ver Jugadores"
+verJugadores.TextColor3 = Color3.fromRGB(0, 0, 0)
+verJugadores.TextScaled = true
+verJugadores.TextSize = 14.000
+verJugadores.TextStrokeColor3 = Color3.fromRGB(165, 10, 255)
+verJugadores.TextStrokeTransparency = 0.000
+verJugadores.TextWrapped = true
 
 reb.Name = "reb"
 reb.Parent = Frame_2
@@ -197,22 +192,22 @@ reb.TextStrokeColor3 = Color3.fromRGB(82, 2, 255)
 reb.TextStrokeTransparency = 0.000
 reb.TextWrapped = true
 
-inimigo.Name = "inimigo"
-inimigo.Parent = Frame_2
-inimigo.AnchorPoint = Vector2.new(0.5, 0)
-inimigo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-inimigo.BorderColor3 = Color3.fromRGB(0, 0, 0)
-inimigo.BorderSizePixel = 0
-inimigo.Position = UDim2.new(0.5, 0, 0.25, 0)
-inimigo.Size = UDim2.new(1, 0, 0.100000001, 0)
-inimigo.Font = Enum.Font.SourceSans
-inimigo.Text = "INIMIGO SELECIONADO"
-inimigo.TextColor3 = Color3.fromRGB(0, 0, 0)
-inimigo.TextScaled = true
-inimigo.TextSize = 14.000
-inimigo.TextStrokeColor3 = Color3.fromRGB(0, 250, 37)
-inimigo.TextStrokeTransparency = 0.000
-inimigo.TextWrapped = true
+enemigp.Name = "enemigp"
+enemigp.Parent = Frame_2
+enemigp.AnchorPoint = Vector2.new(0.5, 0)
+enemigp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+enemigp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+enemigp.BorderSizePixel = 0
+enemigp.Position = UDim2.new(0.5, 0, 0.25, 0)
+enemigp.Size = UDim2.new(1, 0, 0.100000001, 0)
+enemigp.Font = Enum.Font.SourceSans
+enemigp.Text = "Enemigo seleccionado"
+enemigp.TextColor3 = Color3.fromRGB(0, 0, 0)
+enemigp.TextScaled = true
+enemigp.TextSize = 14.000
+enemigp.TextStrokeColor3 = Color3.fromRGB(0, 250, 37)
+enemigp.TextStrokeTransparency = 0.000
+enemigp.TextWrapped = true
 
 a.Name = "a"
 a.Parent = Frame_2
@@ -231,47 +226,47 @@ a.TextStrokeColor3 = Color3.fromRGB(0, 110, 255)
 a.TextStrokeTransparency = 0.000
 a.TextWrapped = true
 
-Status.Name = "Status"
-Status.Parent = Frame_2
-Status.AnchorPoint = Vector2.new(0.5, 0)
-Status.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Status.BorderSizePixel = 0
-Status.Position = UDim2.new(0.5, 0, 0.5, 10)
-Status.Size = UDim2.new(1, 0, 0.100000001, 0)
-Status.Font = Enum.Font.SourceSans
-Status.Text = "Status"
-Status.TextColor3 = Color3.fromRGB(0, 0, 0)
-Status.TextScaled = true
-Status.TextSize = 14.000
-Status.TextStrokeColor3 = Color3.fromRGB(48, 255, 224)
-Status.TextStrokeTransparency = 0.000
-Status.TextWrapped = true
+Stats.Name = "Stats"
+Stats.Parent = Frame_2
+Stats.AnchorPoint = Vector2.new(0.5, 0)
+Stats.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Stats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stats.BorderSizePixel = 0
+Stats.Position = UDim2.new(0.5, 0, 0.5, 10)
+Stats.Size = UDim2.new(1, 0, 0.100000001, 0)
+Stats.Font = Enum.Font.SourceSans
+Stats.Text = "Estadisticas"
+Stats.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stats.TextScaled = true
+Stats.TextSize = 14.000
+Stats.TextStrokeColor3 = Color3.fromRGB(48, 255, 224)
+Stats.TextStrokeTransparency = 0.000
+Stats.TextWrapped = true
 
-formaName.Name = "formaName"
-formaName.Parent = Frame_2
-formaName.AnchorPoint = Vector2.new(0.5, 0)
-formaName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-formaName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-formaName.BorderSizePixel = 0
-formaName.Position = UDim2.new(0.5, 0, 0.649999976, 0)
-formaName.Size = UDim2.new(1, 0, 0.119999997, 0)
-formaName.Font = Enum.Font.SourceSans
-formaName.Text = "..."
-formaName.TextColor3 = Color3.fromRGB(0, 0, 0)
-formaName.TextScaled = true
-formaName.TextSize = 14.000
-formaName.TextStrokeColor3 = Color3.fromRGB(184, 110, 25)
-formaName.TextStrokeTransparency = 0.000
-formaName.TextWrapped = true
+faseName.Name = "faseName"
+faseName.Parent = Frame_2
+faseName.AnchorPoint = Vector2.new(0.5, 0)
+faseName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+faseName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+faseName.BorderSizePixel = 0
+faseName.Position = UDim2.new(0.5, 0, 0.649999976, 0)
+faseName.Size = UDim2.new(1, 0, 0.119999997, 0)
+faseName.Font = Enum.Font.SourceSans
+faseName.Text = "..."
+faseName.TextColor3 = Color3.fromRGB(0, 0, 0)
+faseName.TextScaled = true
+faseName.TextSize = 14.000
+faseName.TextStrokeColor3 = Color3.fromRGB(184, 110, 25)
+faseName.TextStrokeTransparency = 0.000
+faseName.TextWrapped = true
 
-verificacao.Name = "verificacao"
-verificacao.Parent = ScreenGui
-verificacao.BackgroundColor3 = Color3.fromRGB(0, 4, 77)
-verificacao.BorderColor3 = Color3.fromRGB(0, 0, 0)
-verificacao.BorderSizePixel = 0
-verificacao.Position = UDim2.new(0.400725305, 0, 0.19921878, 0)
-verificacao.Size = UDim2.new(0.198549405, 0, 0.599609315, 0)
+verificacion.Name = "verificacion"
+verificacion.Parent = ScreenGui
+verificacion.BackgroundColor3 = Color3.fromRGB(0, 4, 77)
+verificacion.BorderColor3 = Color3.fromRGB(0, 0, 0)
+verificacion.BorderSizePixel = 0
+verificacion.Position = UDim2.new(0.400725305, 0, 0.19921878, 0)
+verificacion.Size = UDim2.new(0.198549405, 0, 0.599609315, 0)
 
 TextLabel_4.Parent = verificacion
 TextLabel_4.AnchorPoint = Vector2.new(0.5, 0)
@@ -296,7 +291,7 @@ usuario.BorderSizePixel = 0
 usuario.Position = UDim2.new(0.5, 0, 0.100000001, 0)
 usuario.Size = UDim2.new(1, 0, 0.100000001, 0)
 usuario.Font = Enum.Font.Unknown
-usuario.Text = "FRACO"
+usuario.Text = "wadawdaw"
 usuario.TextColor3 = Color3.fromRGB(0, 4, 77)
 usuario.TextScaled = true
 usuario.TextSize = 14.000
@@ -312,7 +307,7 @@ TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.5, 0, 0.600000024, 0)
 TextLabel_5.Size = UDim2.new(1, 0, 0.119999997, 0)
 TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "Instagram:"
+TextLabel_5.Text = "Discord:"
 TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
@@ -328,7 +323,7 @@ TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.5, 0, 0.75, 0)
 TextLabel_6.Size = UDim2.new(1, 0, 0.150000006, 0)
 TextLabel_6.Font = Enum.Font.SourceSansItalic
-TextLabel_6.Text = "rik.rianzx29"
+TextLabel_6.Text = "1SK1 ON TOP"
 TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
@@ -359,23 +354,23 @@ TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextWrapped = true
 
-nomes.Name = "nomes"
-nomes.Parent = Frame_3
-nomes.AnchorPoint = Vector2.new(0.5, 0)
-nomes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-nomes.BackgroundTransparency = 1.000
-nomes.BorderColor3 = Color3.fromRGB(0, 0, 0)
-nomes.BorderSizePixel = 0
-nomes.Position = UDim2.new(0.5, 0, 0.449999988, 0)
-nomes.Size = UDim2.new(0.899999976, 0, 0.400000006, 0)
-nomes.Font = Enum.Font.SourceSans
-nomes.Text = "UÉ"
-nomes.TextColor3 = Color3.fromRGB(0, 0, 0)
-nomes.TextScaled = true
-nomes.TextSize = 1.000
-nomes.TextWrapped = true
+names.Name = "names"
+names.Parent = Frame_3
+names.AnchorPoint = Vector2.new(0.5, 0)
+names.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+names.BackgroundTransparency = 1.000
+names.BorderColor3 = Color3.fromRGB(0, 0, 0)
+names.BorderSizePixel = 0
+names.Position = UDim2.new(0.5, 0, 0.449999988, 0)
+names.Size = UDim2.new(0.899999976, 0, 0.400000006, 0)
+names.Font = Enum.Font.SourceSans
+names.Text = "¿?"
+names.TextColor3 = Color3.fromRGB(0, 0, 0)
+names.TextScaled = true
+names.TextSize = 1.000
+names.TextWrapped = true
 
--- script
+-- Scripts:
 
 local function OEGUBNV_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
@@ -411,7 +406,7 @@ local function IIJT_fake_script() -- verJugadores.Script
 	textoContador.Visible= false
 	
 	local function texto(posicionX,posicionY,j,size) -- Texto
-		print("Gerando texto")
+		print("Generando texto")
 		local texto = Instance.new("TextLabel")
 		texto.Parent = frame
 		texto.Size = UDim2.new(size,0,0.05,0)
@@ -427,7 +422,7 @@ local function IIJT_fake_script() -- verJugadores.Script
 	local function players()
 		local Players = game:GetService("Players")
 		local playerList = Players:GetChildren()
-		print("increva jogador")
+		print("Ha entrado a players")
 		for _, player in pairs(playerList) do
 			local statsFolder = game.Workspace.Living[player.Name].Stats
 			local strength = statsFolder.Strength
@@ -484,19 +479,19 @@ local function IIJT_fake_script() -- verJugadores.Script
 			y = y + 0.05
 			contador = contador + 1
 		end
-		textoContador.Text = "Jogadores na Partida:"..contador
+		textoContador.Text = "Jugadores En Partida: "..contador
 	end
 	
 	local function resetFrame()	-- lipiar el menu
 		local frame = script.Parent.Parent.Parent.ScrollingFrame
-		print("redefinir em execucao")
+		print("Reset en ejecucion")
 		x = 0
 		y=0.05
 		contador = 0
 		for i,v in ipairs(frame:GetChildren()) do
 			if v:GetChildren()[5] then
 				v:Destroy()
-				print("destruindo criancas")
+				print("Destruyendo hijos")
 			end
 		end
 		players()
@@ -508,7 +503,7 @@ local function IIJT_fake_script() -- verJugadores.Script
 			frame.Visible = true
 			textoContador.Visible= true
 			resetFrame()
-			print("a redefinicao foi executada")
+			print("Ha sido ejecutado el reset")
 		else
 			verdad = true
 			frame.Visible = false
@@ -528,7 +523,7 @@ local function PCCXXGM_fake_script() -- reb.Script
 	
 	local function a()
 		while rebSiONo do
-			botona.Text = "Rebirth Ativo"
+			botona.Text = "Rebirth Activo"
 			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("reb"):InvokeServer()
 			wait(0.1)
 		end
@@ -538,7 +533,7 @@ local function PCCXXGM_fake_script() -- reb.Script
 		if verdad then
 			verdad = false
 			rebSiONo = false
-			print("rb cancelado")
+			print("Has cancelado reb")
 			botona.Text = "Rebirth Cancelado"
 		else
 			verdad = false
@@ -558,22 +553,20 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 	local script = Instance.new('Script', Frame_2)
 
 	--verificacion
-	
 	--variables
-	
 	local player = game.Players.LocalPlayer
 	local tetxo = script.Parent.Parent.verificacion.Frame.names
 	local frameFarm = script.Parent
 	local frameOriginal = script.Parent.Parent.verificacion
 	local verdad = false
 	local usuarios = {
-		{nombre= "TESTE",verificado = true},
-		{nombre= "TESTE_02",verificado = true},
-		{nombre= "TESTE_05",verificado = true},
-		{nombre= "2MRMaster2",verificado = true},
+		{nombre= "perrocapitanXD",verificado = true},
+		{nombre= "AngelDroid96",verificado = true},
+		{nombre= "brxxn_sl",verificado = true},
+		{nombre= "xdCarlos1233",verificado = true},
 		{nombre= "snshdjnsshdkwgzigd3",verificado = true},
-		{nombre= "TESTE_0150",verificado = true},
-		{nombre= "TESTE_03",verificado = true},
+		{nombre= "ITACHI0872U2Y2",verificado = true},
+		{nombre= "vegeta25812",verificado = true},
 	}
 	local contador = 0
 	
@@ -595,13 +588,13 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 			end 
 		end
 		contador=contador+1
-	until verdad or contador >=5
+	until verdad or contador >=20
 	
-	if contador >=5 then
+	if contador >=20 then
 		while true do
-			tetxo.Text = "não encontrado"
+			tetxo.Text = "Te falta poder"
 			wait(1)
-			tetxo.Text = "tente dnv"
+			tetxo.Text = "Aumenta tu poder!"
 			wait(1)
 		end
 	else
@@ -618,10 +611,10 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 	local textoStats = script.Parent.faseName
 	-- Funciones
 	local function mundoDeBills()
-		game:GetService("ReplicatedStorage").Package.Events.TP:InvokeServer("planeta do bills")
+		game:GetService("ReplicatedStorage").Package.Events.TP:InvokeServer("Vills Planet")
 	end
 	local function statsAltos()
-		textoStats.Text = "Subindo manualmente"
+		textoStats.Text = "Subiendo manualmente"
 		local player = game.Players.LocalPlayer
 		local statsFolder = game.Workspace.Living[player.Name].Stats
 		local strength = statsFolder.Strength
@@ -700,7 +693,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 	end
 	
 	local function statsBajos()
-		textoStats.Text = "Subindo manualmente JR"
+		textoStats.Text = "Subiendo manualmente JR"
 		local player = game.Players.LocalPlayer
 		local statsFolder = game.Workspace.Living[player.Name].Stats
 		local strength = statsFolder.Strength
@@ -834,7 +827,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 		end
 		kiOriginal = a(kiUsuario)
 		caca = kiOriginal / 6 + 100
-		warn("Atualizada"..caca.." - "..kiOriginal)
+		warn("Actualizada "..caca.." - "..kiOriginal)
 	end
 	kiRequerimiento()
 	
@@ -855,13 +848,13 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 				if player.Status.SelectedTransformation.Value ~= player.Status.Transformation.Value then
 					kiRequerimiento()
 					if ki >= caca then
-						warn("teu ki e de:: "..ki.." o requisito e "..caca)
+						warn("Tu ki es de: "..ki.." y el requerimiento es de "..caca)
 						game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
 					else
-						warn("nao tem ki")
+						warn("No tienes ki")
 					end
 				else
-					warn("voce ja tem a forma")
+					warn("Ya tienes la fase")
 				end
 			until game.Players.LocalPlayer.Status.SelectedTransformation.Value == game.Players.LocalPlayer.Status.Transformation.Value
 			wait(1)
@@ -869,18 +862,18 @@ local function PGPDYH_fake_script() -- Frame_2.Script
 	end)
 
 
-	-- validacao de stats
+	-- validacion de stats
 	local  function billsplanet()
 		while true do
-			local A_1 = "terra"
-			textoStats.Text = "Secao: "..A_1
+			local A_1 = "Earth"
+			textoStats.Text = "Seccion: "..A_1
 			local Event = game:GetService("ReplicatedStorage").Package.Events.TP
 			Event:InvokeServer(A_1)
 			wait()
 		end
 	end
 local function revisarStats()
--- variaveis
+-- variables
 local a = data.Strength.Value
 local b = data.Energy.Value
 local c = data.Defense.Value
@@ -905,17 +898,17 @@ end
 end
 end
 
-	-- Farm Logico
+	-- Farm Logica
 	local function autoquest(boolean)
 		SelectedMobs = ""
 		textoEnemigo.Text = "Buscando..."
-		textoStats.Text = "Detectando missao"
+		textoStats.Text = "Detectando mision"
 		local a = data.Strength.Value
 		local b = data.Energy.Value
 		local c = data.Defense.Value
 		local d = data.Speed.Value
 
-		local minimo = a  -- inicializa a menor variável para o primeiro número
+		local minimo = a  -- initialize smallest variable to the first number
 
 		if b < minimo then
 			minimo = b
@@ -932,7 +925,7 @@ end
 		checkValue = minimo
 		revisarStats()
 		for indice, v in ipairs(game:GetService("Workspace").Living:GetChildren()) do
-			textoStats.Text = "Entrando na missao"
+			textoStats.Text = "Entrando a misiones"
 			revisarStats()-- revisa si tienes stats
 				if minimo >= 29000 and minimo <200000 then
 					if v.Humanoid.Health >0 and v.Name == "Klirin" then
@@ -1153,13 +1146,13 @@ end
 	
 	getgenv().stacked = false 
 	
-	--Funcao
+	--Function
 	local function quest()
 		if game:GetService("ReplicatedStorage").Datas[player.UserId].Quest.Value ~= SelectedQuests then
 			player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Others.NPCs[SelectedQuests].HumanoidRootPart.CFrame
 			repeat
 				wait()
-				revisarStats()-- revisando se vc tem status
+				revisarStats()-- revisa si tienes stats
 				events.Qaction:InvokeServer(game:GetService("Workspace").Others.NPCs[SelectedQuests])
 			until game:GetService("ReplicatedStorage").Datas[player.UserId].Quest.Value == SelectedQuests
 		end
@@ -1172,8 +1165,8 @@ end
 					if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  
 					then
 						for i, v in ipairs(game:GetService("Workspace").Living:GetChildren()) do
-							revisarStats()-- verifica se vc tem status
-							autoquest()	--iniciando auto farm
+							revisarStats()-- revisa si tienes stats
+							autoquest()	--inicia el farm
 							if v.Name:lower() == SelectedMobs:lower() and player.Character and player.Character:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
 								quest()
 								getgenv().farm = true
@@ -1188,7 +1181,7 @@ end
 									getgenv().farm = false
 									getgenv().stacked = false
 									repeat
-										print("em auto loop morreu verificação")
+										print("in auto loop died check")
 										wait(1)
 	
 									until plr.Character.Humanoid.Health >= 0
@@ -1232,5 +1225,3 @@ local function QMIKYEO_fake_script() -- usuario.Script
 	tetxo.Text = player.Name
 end
 coroutine.wrap(QMIKYEO_fake_script)()
-
-
