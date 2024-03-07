@@ -1,5 +1,5 @@
 -- Gui to Lua
--- Version: 3.2
+-- Version: Beta
 
 
 -- Instances:
@@ -362,7 +362,7 @@ names.BorderSizePixel = 0
 names.Position = UDim2.new(0.5, 0, 0.449999988, 0)
 names.Size = UDim2.new(0.899999976, 0, 0.400000006, 0)
 names.Font = Enum.Font.SourceSans
-names.Text = "RIK"
+names.Text = "OTÁRIO"
 names.TextColor3 = Color3.fromRGB(0, 0, 0)
 names.TextScaled = true
 names.TextSize = 1.000
@@ -565,7 +565,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   {nombre= "mandrake_750",verificado = true},
   {nombre= "yann_samers",verificado = true},
   {nombre= "Dragon_whiter011",verificado = true},
-  {nombre= "yann_original",verificado = true},
+  {nombre= "ITACHI0872U2Y2",verificado = true},
   {nombre= "snshdjnsshdkwgzigd3",verificado = true},
   {nombre= "yann_samers",verificado = true},
   {nombre= "@tudodenovo_2",verificado = true},
@@ -1234,4 +1234,4 @@ local function QMIKYEO_fake_script() -- usuario.Script
  
  tetxo.Text = player.Name
 end
-coroutine.wrap(QMIKYEO_fake_script)()
+coroutine.wrap(QMIKYEO_fake_script)() 
