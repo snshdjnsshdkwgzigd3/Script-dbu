@@ -2,6 +2,7 @@
 -- Version: Beta
 
 
+
 -- Instances:
 local player = game.Players.LocalPlayer
 local ScreenGui = Instance.new("ScreenGui")
@@ -124,7 +125,7 @@ contador.Position = UDim2.new(0.787851334, 0, 0.85546875, 0)
 contador.Size = UDim2.new(0, 176, 0, 43)
 contador.Visible = false
 contador.Font = Enum.Font.SourceSans
-contador.Text = "Jugadroes En Partida"
+contador.Text = "Players:"
 contador.TextColor3 = Color3.fromRGB(255, 255, 255)
 contador.TextScaled = true
 contador.TextSize = 14.000
@@ -146,7 +147,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
 TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "Farm MultiQuest"
+TextButton.Text = "USR X RIK"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -274,7 +275,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.5, 0, 0, 0)
 TextLabel_4.Size = UDim2.new(1, 0, 0.100000001, 0)
 TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "Usuario detectado"
+TextLabel_4.Text = "GUERREIRO USR"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
@@ -289,7 +290,7 @@ usuario.BorderSizePixel = 0
 usuario.Position = UDim2.new(0.5, 0, 0.100000001, 0)
 usuario.Size = UDim2.new(1, 0, 0.100000001, 0)
 usuario.Font = Enum.Font.Unknown
-usuario.Text = "wadawdaw"
+usuario.Text = "QUEM É VOCÊ?"
 usuario.TextColor3 = Color3.fromRGB(0, 4, 77)
 usuario.TextScaled = true
 usuario.TextSize = 14.000
