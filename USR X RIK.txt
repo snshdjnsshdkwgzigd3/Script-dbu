@@ -569,7 +569,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   {nombre= "ITACHI0872U2Y2",verificado = true},
   {nombre= "snshdjnsshdkwgzigd3",verificado = true},
   {nombre= "yann_samers",verificado = true},
-  {nombre= "RIK_RIANZX29",verificado = true},
+  {nombre= "RIK_RIANZX39",verificado = true},
   {nombre= "NAGATOFF1234577",verificado = true},
  }
  local contador = 0
