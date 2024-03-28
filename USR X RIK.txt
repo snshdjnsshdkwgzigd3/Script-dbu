@@ -1,7 +1,5 @@
 -- Gui to Lua
--- Version: Beta
-
-
+-- USR BETA
 
 -- Instances:
 local player = game.Players.LocalPlayer
@@ -32,7 +30,7 @@ local TextLabel_7 = Instance.new("TextLabel")
 local names = Instance.new("TextLabel")
 
 --no borrar
-ScreenGui.Name = "USR X RIK"
+ScreenGui.Name = "RIK"
 ScreenGui.ResetOnSpawn = false
 ScreenGui.DisplayOrder = 999
 ScreenGui.Parent = player.PlayerGui
@@ -64,7 +62,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0.300000012, 0, 1, 0)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Nombre"
+TextLabel.Text = "Guerreiro"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -78,7 +76,7 @@ TextLabel_2.BorderColor3 = Color3.fromRGB(17, 0, 255)
 TextLabel_2.Position = UDim2.new(0.300000012, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0.25, 0, 1, 0)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Rebirths"
+TextLabel_2.Text = "Potencial"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -92,7 +90,7 @@ TextLabel_3.BorderColor3 = Color3.fromRGB(17, 0, 255)
 TextLabel_3.Position = UDim2.new(0.550000012, 0, 0, 0)
 TextLabel_3.Size = UDim2.new(0.200000003, 0, 1, 0)
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Stats"
+TextLabel_3.Text = "Poder de Luta"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
@@ -108,7 +106,7 @@ fase.BorderSizePixel = 0
 fase.Position = UDim2.new(0.750999987, 0, 0, 0)
 fase.Size = UDim2.new(0.219999999, 0, 1, 0)
 fase.Font = Enum.Font.SourceSans
-fase.Text = "Fase"
+fase.Text = "FORMA"
 fase.TextColor3 = Color3.fromRGB(0, 0, 0)
 fase.TextScaled = true
 fase.TextSize = 14.000
@@ -125,7 +123,7 @@ contador.Position = UDim2.new(0.787851334, 0, 0.85546875, 0)
 contador.Size = UDim2.new(0, 176, 0, 43)
 contador.Visible = false
 contador.Font = Enum.Font.SourceSans
-contador.Text = "Players:"
+contador.Text = "INSETOS"
 contador.TextColor3 = Color3.fromRGB(255, 255, 255)
 contador.TextScaled = true
 contador.TextSize = 14.000
@@ -147,7 +145,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
 TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "USR X RIK"
+TextButton.Text = "USR_RIK"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -166,7 +164,7 @@ verJugadores.BorderSizePixel = 2
 verJugadores.Position = UDim2.new(0.5, 0, 0, 1)
 verJugadores.Size = UDim2.new(0.99000001, 0, 0.119999997, 0)
 verJugadores.Font = Enum.Font.SourceSans
-verJugadores.Text = "Players"
+verJugadores.Text = "Scouter"
 verJugadores.TextColor3 = Color3.fromRGB(0, 0, 0)
 verJugadores.TextScaled = true
 verJugadores.TextSize = 14.000
@@ -183,7 +181,7 @@ reb.BorderSizePixel = 2
 reb.Position = UDim2.new(0.5, 0, 0.100000001, 8)
 reb.Size = UDim2.new(0.99000001, 0, 0.100000001, 0)
 reb.Font = Enum.Font.SourceSans
-reb.Text = "Rebirth On"
+reb.Text = "RB AUTOMÁTICO"
 reb.TextColor3 = Color3.fromRGB(0, 0, 0)
 reb.TextScaled = true
 reb.TextSize = 14.000
@@ -200,7 +198,7 @@ enemigp.BorderSizePixel = 0
 enemigp.Position = UDim2.new(0.5, 0, 0.25, 0)
 enemigp.Size = UDim2.new(1, 0, 0.100000001, 0)
 enemigp.Font = Enum.Font.SourceSans
-enemigp.Text = "Farm Selected"
+enemigp.Text = "Inseto alvo"
 enemigp.TextColor3 = Color3.fromRGB(0, 0, 0)
 enemigp.TextScaled = true
 enemigp.TextSize = 14.000
@@ -217,7 +215,7 @@ a.BorderSizePixel = 0
 a.Position = UDim2.new(0.5, 0, 0.400000006, 0)
 a.Size = UDim2.new(0.800000012, 0, 0.119999997, 0)
 a.Font = Enum.Font.SourceSans
-a.Text = "..."
+a.Text = "RASTREANDO"
 a.TextColor3 = Color3.fromRGB(0, 0, 0)
 a.TextScaled = true
 a.TextSize = 14.000
@@ -234,7 +232,7 @@ Stats.BorderSizePixel = 0
 Stats.Position = UDim2.new(0.5, 0, 0.5, 10)
 Stats.Size = UDim2.new(1, 0, 0.100000001, 0)
 Stats.Font = Enum.Font.SourceSans
-Stats.Text = "Stats"
+Stats.Text = "NPC"
 Stats.TextColor3 = Color3.fromRGB(0, 0, 0)
 Stats.TextScaled = true
 Stats.TextSize = 14.000
@@ -251,7 +249,7 @@ faseName.BorderSizePixel = 0
 faseName.Position = UDim2.new(0.5, 0, 0.649999976, 0)
 faseName.Size = UDim2.new(1, 0, 0.119999997, 0)
 faseName.Font = Enum.Font.SourceSans
-faseName.Text = "..."
+faseName.Text = "VMS LUTA!!!"
 faseName.TextColor3 = Color3.fromRGB(0, 0, 0)
 faseName.TextScaled = true
 faseName.TextSize = 14.000
@@ -290,7 +288,7 @@ usuario.BorderSizePixel = 0
 usuario.Position = UDim2.new(0.5, 0, 0.100000001, 0)
 usuario.Size = UDim2.new(1, 0, 0.100000001, 0)
 usuario.Font = Enum.Font.Unknown
-usuario.Text = "QUEM É VOCÊ?"
+usuario.Text = "Vc é fraco"
 usuario.TextColor3 = Color3.fromRGB(0, 4, 77)
 usuario.TextScaled = true
 usuario.TextSize = 14.000
@@ -306,7 +304,7 @@ TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.5, 0, 0.600000024, 0)
 TextLabel_5.Size = UDim2.new(1, 0, 0.119999997, 0)
 TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "Instagram:"
+TextLabel_5.Text = "insta:"
 TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
@@ -322,7 +320,7 @@ TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.5, 0, 0.75, 0)
 TextLabel_6.Size = UDim2.new(1, 0, 0.150000006, 0)
 TextLabel_6.Font = Enum.Font.SourceSansItalic
-TextLabel_6.Text = "@rik.rianzx29"
+TextLabel_6.Text = "@rik_rianzx29"
 TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
@@ -347,7 +345,7 @@ TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.5, 0, 0.100000001, 0)
 TextLabel_7.Size = UDim2.new(0.800000012, 0, 0.300000012, 0)
 TextLabel_7.Font = Enum.Font.Unknown
-TextLabel_7.Text = "Usuarios"
+TextLabel_7.Text = "MEMBROS DA USR"
 TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.TextScaled = true
 TextLabel_7.TextSize = 14.000
@@ -363,7 +361,7 @@ names.BorderSizePixel = 0
 names.Position = UDim2.new(0.5, 0, 0.449999988, 0)
 names.Size = UDim2.new(0.899999976, 0, 0.400000006, 0)
 names.Font = Enum.Font.SourceSans
-names.Text = "OTÁRIO"
+names.Text = "Q??"
 names.TextColor3 = Color3.fromRGB(0, 0, 0)
 names.TextScaled = true
 names.TextSize = 1.000
@@ -522,7 +520,7 @@ local function PCCXXGM_fake_script() -- reb.Script
  
  local function a()
   while rebSiONo do
-   botona.Text = "Rebirth On"
+   botona.Text = "RB AUTOMÁTICO"
    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("reb"):InvokeServer()
    wait(0.1)
   end
@@ -533,7 +531,7 @@ local function PCCXXGM_fake_script() -- reb.Script
    verdad = false
    rebSiONo = false
    print("Has cancelado reb")
-   botona.Text = "Rebirth Off"
+   botona.Text = "STATUS AUTOMÁTICO"
   else
    verdad = true
    rebSiONo = true
@@ -559,18 +557,18 @@ local function PGPDYH_fake_script() -- Frame_2.Script
  local frameOriginal = script.Parent.Parent.verificacion
  local verdad = false
  local usuarios = {
-  {nombre= "sawyfps",verificado = true},
   {nombre= "2MRMaster2",verificado = true},
-  {nombre= "blaykerdeix10",verificado = true},
-  {nombre= "SONGOKU77193",verificado = true},
+  {nombre= "blaykerdeix10blaykerdeix10",verificado = true},
   {nombre= "Skayzerak",verificado = true},
-  {nombre= "Allan120240",verificado = true},
-  {nombre= "Dragon_whiter011",verificado = true},
-  {nombre= "ITACHI0872U2Y2",verificado = true},
+  {nombre= "SONGOKU77193",verificado = true},
+  {nombre= "sasuke_uchiha689012",verificado = true},
+  {nombre= "blaykerdeix10",verificado = true},
+  {nombre= "deixblayker",verificado = true},
+  {nombre= "kaua123456lu121",verificado = true},
   {nombre= "snshdjnsshdkwgzigd3",verificado = true},
-  {nombre= "GTACJCJCJ",verificado = true},
+  {nombre= "Allan120240",verificado = true},
   {nombre= "GVXZIN",verificado = true},
-  {nombre= "NAGATOFF1234577",verificado = true},
+  {nombre= "ZzhiagoozZ",verificado = true},
  }
  local contador = 0
  
@@ -582,7 +580,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
      game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
      end
     end
-    tetxo.Text = " encontrado!"
+    tetxo.Text = "BEM VINDO RBX"
     wait(0.3)
     tetxo.Text = v.nombre
     verdad = true
@@ -598,7 +596,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   while true do
    tetxo.Text = "La prueba gratuita ha finalizado!"
    wait(3)
-   tetxo.Text = "No puedes seguir!"
+   tetxo.Text = "NÃO TA NO CLÃ!!!"
    wait(2)
   end
  else
@@ -618,7 +616,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   game:GetService("ReplicatedStorage").Package.Events.TP:InvokeServer("Vills Planet")
  end
  local function statsAltos()
-  textoStats.Text = "Subiendo manualmente"
+  textoStats.Text = "VOU UPA RAPIDÃO ATÉ +10K"
   local player = game.Players.LocalPlayer
   local statsFolder = game.Workspace.Living[player.Name].Stats
   local strength = statsFolder.Strength
@@ -697,7 +695,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
  end
  
  local function statsBajos()
-  textoStats.Text = "Subiendo manualmente JR"
+  textoStats.Text = "VOU PEGAR +10K"
   local player = game.Players.LocalPlayer
   local statsFolder = game.Workspace.Living[player.Name].Stats
   local strength = statsFolder.Strength
@@ -705,7 +703,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   local energy = statsFolder.Energy
   local defense = statsFolder.Defense
   local function s()
-   while strength.Value<50000 do
+   while strength.Value<10000 do
     wait(.3)
     --PUNCH
     local args = {
@@ -713,14 +711,14 @@ local function PGPDYH_fake_script() -- Frame_2.Script
      [2] = 1
     }
     game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-    if strength.Value>=50000 then
+    if strength.Value>=10000 then
      break
     end
    end
   end
   spawn (s)
   local function l()
-   while energy.Value<50000 do
+   while energy.Value<10000 do
     wait(.3)
     --KIBLAST
     local args = {
@@ -729,14 +727,14 @@ local function PGPDYH_fake_script() -- Frame_2.Script
      [3] = CFrame.new(12, 12, 12)
     }
     game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-    if  energy.Value >=50000 then
+    if  energy.Value >=10000 then
      break
     end
    end
   end
   spawn (l)
   local function m()
-   while defense.Value <50000 do
+   while defense.Value <10000 do
     --DEFENSE
     wait(.3)
     local args = {
@@ -744,30 +742,30 @@ local function PGPDYH_fake_script() -- Frame_2.Script
     }
  
     game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-    if defense.Value >=50000 then
+    if defense.Value >=10000 then
      break
     end
    end
   end
   spawn (m)
   local function p()
-   while speed.Value <50000 do
+   while speed.Value <10000 do
     wait(.3)
     game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-    if speed.Value >=50000 then
+    if speed.Value >=10000 then
      break
     end
    end
   end
   spawn (p)
-  while speed.Value <50000 do
+  while speed.Value <10000 do
    wait(.3)
    local args = {
     [1] = "Blacknwhite27"
    }
  
    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-   if speed.Value >=50000 then
+   if speed.Value >=10000 then
     break
    end
   end
@@ -842,7 +840,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
  _G.fasesalv=true
  spawn(function ()
   while _G.fasesalv do
-   local fases={"Beast","SSJBUI","Ultra Ego","SSJB4","LBSSJ4","SSJR3","SSJB3","True God of Creation","True God of Destruction","God of Destruction","God Of Creation","Jiren Ultra Instinct","Mastered Ultra Instinct","Godly SSJ2","Super Broly","Ultra Instinct Omen","LSSJG","Evil SSJ","Blue Evolution","Dark Rose","Kefla SSJ2","SSJ Berserker","LSSJ4","True Rose","SSJB Kaioken","SSJG4","LSSJ3","SSJ Rose","SSJ Blue","SSJ5","Corrupt SSJ","SSJ Rage","SSJG","SSJ4","SSJ3","SSJ2","SSJ"}
+   local fases={"Branco","Beast","SSJBUI","Ultra Ego","SSJB4","LBSSJ4","SSJR3","SSJB3","True God of Creation","True God of Destruction","God of Destruction","God Of Creation","Jiren Ultra Instinct","Mastered Ultra Instinct","Godly SSJ2","Super Broly","Ultra Instinct Omen","LSSJG","Evil SSJ","Blue Evolution","Dark Rose","Kefla SSJ2","SSJ Berserker","LSSJ4","True Rose","SSJB Kaioken","SSJG4","LSSJ3","SSJ Rose","SSJ Blue","SSJ5","Corrupt SSJ","SSJ Rage","SSJG","SSJ4","SSJ3","SSJ2","SSJ"}
    local equipRemote = game:GetService("ReplicatedStorage").Package.Events.equipskill
    local player = game.Players.LocalPlayer
    local skills = game.ReplicatedStorage.Package.Skills
@@ -874,7 +872,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
  local  function billsplanet()
   while true do
    local A_1 = "Earth"
-   textoStats.Text = "Seccion: "..A_1
+   textoStats.Text = "É +8MIL"..A_1
    local Event = game:GetService("ReplicatedStorage").Package.Events.TP
    Event:InvokeServer(A_1)
    wait()
@@ -887,7 +885,7 @@ local b = data.Energy.Value
 local c = data.Defense.Value
 local d = data.Speed.Value
 local f = data.Rebirth.Value
-local treinkaK = 30000
+local treinkaK = 10000
 if a < treinkaK or b < treinkaK or c < treinkaK or d < treinkaK then
  wait(8)
 if f >=300 then
@@ -909,8 +907,8 @@ end
  -- Farm Logica
  local function autoquest(boolean)
   SelectedMobs = ""
-  textoEnemigo.Text = "Buscando..."
-  textoStats.Text = "Detectando mision"
+  textoEnemigo.Text = "INSETOS"
+  textoStats.Text = "RASTREANDO"
   local a = data.Strength.Value
   local b = data.Energy.Value
   local c = data.Defense.Value
@@ -933,9 +931,9 @@ end
   checkValue = minimo
   revisarStats()
   for indice, v in ipairs(game:GetService("Workspace").Living:GetChildren()) do
-   textoStats.Text = "Entrando a misiones"
+   textoStats.Text = "VOU ELIMINAR VC INSETO"
    revisarStats()-- revisa si tienes stats
-    if minimo >= 29000 and minimo <200000 then
+    if minimo >= 10000 and minimo <200000 then
      if v.Humanoid.Health >0 and v.Name == "Klirin" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -952,7 +950,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=200000 and minimo <850000 then
+    elseif minimo >=100000 and minimo <850000 then
      if v.Humanoid.Health >0 and v.Name == "Mapa" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -969,7 +967,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=850000 and minimo <4500000 then
+    elseif minimo >=500000 and minimo <4500000 then
      if v.Humanoid.Health >0 and v.Name == "Super Vegetable" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -986,7 +984,7 @@ end
       SelectedMobs =SelectedQuests
       return
      end
-    elseif minimo >=4500000 and minimo < 5000000 then
+    elseif minimo >=2500000 and minimo < 5000000 then
      if v.Humanoid.Health >0 and v.Name == "Perfect Atom" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1003,7 +1001,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=5000000 and minimo < 30000000 then
+    elseif minimo >=4000000 and minimo < 30000000 then
      if v.Humanoid.Health >0 and v.Name == "SSJB Wukong" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1020,7 +1018,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=30000000 and minimo < 150000000 then
+    elseif minimo >=15000000 and minimo < 150000000 then
      if v.Humanoid.Health >0 and v.Name == "Broccoli" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1037,7 +1035,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=150000000 and minimo < 550000000 then
+    elseif minimo >=100000000 and minimo < 550000000 then
      if v.Humanoid.Health >0 and v.Name == "Vegetable (GoD in-training)" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1054,7 +1052,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=550000000 and minimo < 1250000000 then
+    elseif minimo >=500000000 and minimo < 1250000000 then
      if v.Humanoid.Health >0 and v.Name == "Vis (20%)" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1071,7 +1069,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=1250000000 and minimo < 2500000000 then
+    elseif minimo >=1000000000 and minimo < 2500000000 then
      if v.Humanoid.Health >0 and v.Name == "Wukong (LBSSJ4)" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1088,7 +1086,7 @@ end
       SelectedMobs = SelectedQuests
       return
      end
-    elseif minimo >=2500000000 then
+    elseif minimo >=2000000000 then
      if v.Humanoid.Health >0 and v.Name == "Vekuta (SSJBUI)" then
       textoEnemigo.Text = v.name
       SelectedQuests = v.name
@@ -1148,8 +1146,6 @@ end
   elseif data.Strength.Value <= 10000000 and ki > caca then
    wait(0.5)
    game.ReplicatedStorage.Package.Events.mel:InvokeServer("Energy Volley", "Blacknwhite27")
-   wait(1)
-   game.ReplicatedStorage.Package.Events.mel:InvokeServer("Beast cannon", "Blacknwhite27")
    wait(1)
    game.ReplicatedStorage.Package.Events.mel:InvokeServer("High Power Rush", "Blacknwhite27")
   end
@@ -1235,4 +1231,4 @@ local function QMIKYEO_fake_script() -- usuario.Script
  
  tetxo.Text = player.Name
 end
-coroutine.wrap(QMIKYEO_fake_script)() 
+coroutine.wrap(QMIKYEO_fake_script)()
