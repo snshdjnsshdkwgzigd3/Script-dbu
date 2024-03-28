@@ -560,7 +560,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
  local verdad = false
  local usuarios = {
   {nombre= "sawyfps",verificado = true},
-  {nombre= "l2l2l2l0pi",verificado = true},
+  {nombre= "2MRMaster2",verificado = true},
   {nombre= "blaykerdeix10",verificado = true},
   {nombre= "SONGOKU77193",verificado = true},
   {nombre= "Skayzerak",verificado = true},
