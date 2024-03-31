@@ -561,7 +561,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   {nombre= "blaykerdeix10blaykerdeix10",verificado = true},
   {nombre= "Skayzerak",verificado = true},
   {nombre= "SONGOKU77193",verificado = true},
-  {nombre= "sasuke_uchiha689012",verificado = true},
+  {nombre= "davi157brazil2",verificado = true},
   {nombre= "blaykerdeix10",verificado = true},
   {nombre= "deixblayker",verificado = true},
   {nombre= "mandrake_750",verificado = true},
