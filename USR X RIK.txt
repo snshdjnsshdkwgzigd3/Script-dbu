@@ -145,7 +145,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Size = UDim2.new(1, 0, 0.100000001, 0)
 TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "JÁ TA EM LINK"
+TextButton.Text = "USR X RIK"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
@@ -580,7 +580,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
      game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
      end
     end
-    tetxo.Text = "BEM VINDO RBX"
+    tetxo.Text = "BEM VINDO USR"
     wait(0.3)
     tetxo.Text = v.nombre
     verdad = true
