@@ -563,7 +563,7 @@ local function PGPDYH_fake_script() -- Frame_2.Script
   {nombre= "SONGOKU77193",verificado = true},
   {nombre= "davi157brazil2",verificado = true},
   {nombre= "blaykerdeix10",verificado = true},
-  {nombre= "deixblayker",verificado = true},
+  {nombre= "davi157brazil3",verificado = true},
   {nombre= "mandrake_750",verificado = true},
   {nombre= "snshdjnsshdkwgzigd3",verificado = true},
   {nombre= "Allan120240",verificado = true},
